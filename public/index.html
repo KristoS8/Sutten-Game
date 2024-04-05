@@ -11,10 +11,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-biru-muda flex justify-center items-center h-screen">
-    <div class="bg-biru h-80 w-96 shadow-xl rounded-md outline outline-hitam mx-auto text-center">
+  <body class="bg-gradient-to-r from-biru-tua via-biru-muda to-biru-muda flex justify-center items-center h-screen">
+    <div class="bg-biru h-1/2 w-96 shadow-xl rounded-md outline outline-hitam mx-auto text-center">
       <h1 class="text-2xl mt-5 mx-auto text-center font-Concert-one text-cyan-100">Welcome To Sutten Game!</h1>
-      <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-20 shadow-lg rounded-lg outline outline-hitam" >Start Game</button>
+      <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-20 shadow-lg rounded-lg outline outline-hitam transition duration-500 ease-in-out" onclick="" id="btnStartGame">
+        Start Game
+      </button>
+
+      <div id="matchGame">
+        <div class="bg-slate-50 ml-5 me-5 h-28 mt-12 rounded-md">
+          <div class="flex justify-between">
+            <p class="font-Concert-one text-lg flex justify-start ms-12">You</p>
+            <p class="font-Concert-one text-lg flex justify-end me-12">Bot</p>
+          </div>
+
+          <div class="flex justify-around items-center">
+            <div class="bg-biru-tua h-16 w-16 rounded-md">
+              <img src="img/littleFinger.png" class="h-16 w-16 rotate-90 p-2" alt="" />
+            </div>
+
+            <h2 class="flex items-center text-2xl font-Concert-one font-bold text-biru-tua">VS</h2>
+
+            <div class="bg-biru-tua h-16 w-16 rounded-md">
+              <img src="img/indexFinger.png" class="h-16 w-16 -rotate-90 p-2" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <p class="font-Concert-one text-xl text-cyan-50 mt-2">Choose Action To Play</p>
+      
+        <div class="bg-slate-50 mt-2 h-24 ms-5 me-5 rounded-md flex items-center justify-around">
+          <div class="bg-biru h-16 w-16 rounded-md cursor-pointer active:bg-biru-tua">
+            <img src="img/littleFinger.png" class="h-16 w-16 p-2" alt="" />
+          </div>
+          <div class="bg-biru h-16 w-16 rounded-md cursor-pointer active:bg-biru-tua">
+            <img src="img/indexFinger.png" class="h-16 w-16 p-2" alt="" />
+          </div>
+          <div class="bg-biru h-16 w-16 rounded-md cursor-pointer active:bg-biru-tua">
+            <img src="img/thumbsUp.png" class="h-16 w-16 p-2" alt="" />
+          </div>
+        </div>
+
+      </div>
+
+     
     </div>
 
     <script src="js/data.js"></script>
