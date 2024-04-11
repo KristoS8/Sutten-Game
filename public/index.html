@@ -12,7 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-gradient-to-r from-biru-tua via-biru-muda to-biru-muda flex justify-center items-center h-screen">
-    <div class="bg-biru h-1/2 w-96 shadow-xl rounded-md outline outline-hitam mx-auto text-center">
+
+    <div class="bg-biru h-100 w-96 shadow-xl rounded-md outline outline-hitam mx-auto text-center">
       <h1 class="text-2xl mt-5 mx-auto text-center font-Concert-one text-cyan-100">Welcome To Sutten Game!</h1>
       <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-20 shadow-lg rounded-lg outline outline-hitam transition duration-500 ease-in-out" onclick="" id="btnStartGame">
         Start Game
@@ -27,13 +28,13 @@
 
           <div class="flex justify-around items-center">
             <div class="bg-biru-tua h-16 w-16 rounded-md userCoice">
-              <img src="img/littleFinger.png" class="h-16 w-16 p-2" />
+              <img src="" alt="." class="h-16 w-16 p-2" />
             </div>
 
             <h2 class="flex items-center text-2xl font-Concert-one font-bold text-biru-tua">VS</h2>
 
-            <div class="bg-biru-tua h-16 w-16 rounded-md" id="divBotCoice">
-              <div id="botCoice"></div>
+            <div class="bg-biru-tua h-16 w-16 rounded-md botCoice">
+              <img src="" alt="." class="h-16 w-16 p-2">
             </div>
           </div>
         </div>
@@ -52,8 +53,13 @@
           <div class="bg-biru h-16 w-16 rounded-md cursor-pointer active:bg-biru-tua option_img">
             <img src="img/thumbsUp.png" class="h-16 w-16 p-2 img" alt="" />
           </div>
+
         </div>
+
       </div>
+
+      <p class="text-white font-semibold text-lg mt-7" id="hasil">Hasil</p>
+
     </div>
 
     <script src="js/data.js"></script>

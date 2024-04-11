@@ -12,6 +12,9 @@ module.exports = {
       fontFamily : {
         'Concert-one' : ['Concert One']
       },
+      height : {
+        '100' : '500px'
+      }
     },
   },
   plugins: [],
