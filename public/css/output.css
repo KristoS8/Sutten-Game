@@ -558,6 +558,18 @@ video {
   visibility: visible;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.left-52 {
+  left: 13rem;
+}
+
+.right-52 {
+  right: 13rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -583,8 +595,12 @@ video {
   margin-inline-start: 1.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-2 {
@@ -593,6 +609,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .mt-5 {
