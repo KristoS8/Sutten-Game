@@ -16,16 +16,43 @@
     <div class="bg-biru h-100 w-96 shadow-xl rounded-md outline outline-hitam mx-auto text-center">
       <h1 class="text-2xl mt-5 mx-auto text-center font-Concert-one text-cyan-100">Welcome To Sutten Game!</h1>
 
-      <p class="text-white font-semibold text-lg mt-3" id="matchTime">30s</p>
+      <div class="bg-biru-muda h-12 mt-5 rounded-md cursor-pointer active:bg-biru-tua mx-auto max-w-max outline outline-offset-0 outline-2 outline-hitam" id="selectTime">
+        <p class="text-gray-700 p-2 text-lg font-Concert-one active:text-white">Set Time</p>
+      </div>
 
-      <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-20 shadow-lg rounded-lg outline outline-hitam transition duration-500 ease-in-out" onclick="" id="btnStartGame">
+      <div class="flex justify-evenly items-center" id="groupTime">
+        <div class="bg-biru-muda h-12 mt-5 rounded-md cursor-pointer active:bg-biru-tua mx-auto max-w-max outline outline-offset-0 outline-2 outline-hitam" id="time10s">
+          <p class="text-gray-700 p-2 text-lg font-Concert-one active:text-white">10s</p>
+        </div>
+  
+        <div class="bg-biru-muda h-12 mt-5 rounded-md cursor-pointer active:bg-biru-tua mx-auto max-w-max outline outline-offset-0 outline-2 outline-hitam" id="time30s">
+          <p class="text-gray-700 p-2 text-lg font-Concert-one active:text-white">30s</p>
+        </div>
+        
+        <div class="bg-biru-muda h-12 mt-5 rounded-md cursor-pointer active:bg-biru-tua mx-auto max-w-max outline outline-offset-0 outline-2 outline-hitam" id="time1m">
+          <p class="text-gray-700 p-2 text-lg font-Concert-one active:text-white">1m</p>
+        </div>
+      </div>
+
+      <p class="text-white p-2 text-lg font-Concert-one" id="matchTime"></p>
+      
+      <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-28 shadow-lg rounded-lg outline outline-hitam transition duration-500 ease-in-out" onclick="" id="btnStartGame">
         Start Game
       </button>
 
-      <p class="text-white font-semibold text-xl absolute right-52 left-52 mt-14" id="timeToStart"></p>
+      <p class="text-white font-semibold text-sm mt-5" id="highestSkor">g</p>
+
+      <div class="font-Concert-one mt-14 text-white" id="aturanGame" contenteditable="false">
+        Game Rules:
+        <p>Jika Kamu Menang, Point Bertambah 3</p>
+        <p>Jika Kamu Kalah, Point Berkurang 1</p>
+        <p>Jika Seri, Tidak ada point yang bertambah <br> atau berkurang</p>
+      </div>
+
+      <p class="text-white text-4xl animate-bounce mt-24 font-Concert-one" id="timeToStart"></p>
 
       <div id="matchGame">
-        <div class="bg-slate-50 ml-5 me-5 h-28 mt-10 rounded-md">
+        <div class="bg-slate-50 ml-5 me-5 h-28 mt-5 rounded-md">
           <div class="flex justify-between">
             <p class="font-Concert-one text-lg flex justify-start ms-12">You</p>
             <p class="font-Concert-one text-lg flex justify-end me-12">Bot</p>
@@ -63,9 +90,13 @@
 
       </div>
 
-      <p class="text-white font-semibold text-lg mt-7" id="hasil">Hasil</p>
+      <p class="text-white font-semibold text-lg mt-7" id="hasil"></p>
 
       <p class="text-white font-semibold text-lg mt-5" id="skor"></p>
+
+      <button class="bg-biru-muda active:bg-biru-tua active:text-white text-hitam font-Concert-one mx-auto p-3 mt-5 shadow-lg rounded-lg outline outline-hitam transition duration-500 ease-in-out" onclick="" id="retry">
+        Try Again
+      </button>
 
     </div>
 
