@@ -9,7 +9,7 @@ silahkan clone dan jalankan
 _css tailwind, jadi run npmnya dulu_
 
 
-dah gitu aja, selamat bermain\n
+dah gitu aja, selamat bermain
 
 
 
